@@ -11,22 +11,26 @@ function App() {
       </div>
       {/* Top Bar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
 
+
+
       <div className="content">
         <div className="card-array">
 
 
-
-
+          {/* Tagged Selector ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
           <div className="card three-one">
             <h2>Tagged Selector</h2>
             <TaggedSelector/>
           </div>
+          {/* Tagged Selector ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
 
 
 
         </div> {/* card-array */}
       </div> {/* content */}
     </div> // app
+
+    
   );
 }
 

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
 
-
-
 export function TaggedSelector() {
     const [selectedItems, setSelectedItems] = useState([]);
   
@@ -23,6 +21,7 @@ export function TaggedSelector() {
 
     return (
         <div className="container-tags-and-dropdown">
+            {/* dropdown */}
             <div className="container-flag-and-dropdown">
             <label className="input-flag">Languages:</label>
             <select
@@ -41,7 +40,7 @@ export function TaggedSelector() {
             </select>
             </div>
             
-            {/* language tags */}
+            {/* tags */}
             <div className="container-tags">
             {selectedItems.map((language, idx) => (
                 <span key={idx} className="tag">
