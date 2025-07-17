@@ -1,38 +1,163 @@
+/* Housekeeping ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .App {
   text-align: center;
+  background-color: var(--bg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --bg: #EFEFEF;
+  --text: #141414;
+  --indigo: #C3C0F2;
+  --dark-indigo: #58567B;
+  --sage-green: #CFDDBC;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content{
+  background-color: var(--bg);
+  padding: 1vw;
+  height: 100vh
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.top {
+  background-color: var(--indigo);
+  padding: 1rem;
+  color: var(--text);
+  height: 3.5rem;
+  border-bottom: 3px solid var(--dark-indigo);
   align-items: center;
+}
+
+.top h1 {
+  margin-top: 7px;
+  font-family: 'Baloo 2', cursive, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+/* Housekeeping ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* Cards ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.card-array{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  
 }
+.card {
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
+  width: 10vw;
+  height: 10vw;
+  background-color: white;
+  border: 2px solid var(--dark-indigo);
+  border-radius: 10px;
+  min-height: fit-content;
+}.two-one {
+  width: 20vw;
+  height: 10vw;
+}.three-one {
+  width: 30vw;
+  height: 10vw;
+}.one-two {
+  width: 10vw;
+  height: 20vw;
+}.one-three {
+  width: 10vw;
+  height: 30vw;
+}.two-two {
+  width: 20vw;
+  height: 20vw;
+}.three-three {
+  width: 30vw;
+  height: 30vw;
+}
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+/* Cards ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+/* Tagged Selector ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container-tags-and-dropdown {
+  gap: 0;
+  padding: 8px 2vmin;
+  padding-top: 1rem;
+  margin-bottom: 1rem !important;
+  align-items: center;
+  border-radius: 6px;
+  padding: 8px 2vmin;
+  padding-top: 8px;
+  margin-bottom: 1rem !important; 
+  width: fill;
+  background-color: var(--pure-white); 
+  flex: 1 1 auto; 
 }
+.container-flag-and-dropdown {
+  gap: 0;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: fit-content;
+  border-radius: 6px;
+
+}
+.container-tags {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 0.5rem;
+  height: fit-content;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; 
+  flex-direction: row;
+}.input-flag {
+  font-weight: 500;
+  align-self: center;
+  color: #222222;
+  margin-right: 12px;
+  white-space: nowrap;
+}.dropdown {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  flex-grow: 1;
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid var(--dark-indigo);
+  border-radius: 5px;
+  padding: 0.2rem;
+  width: fit-content;
+  /* make not native */
+  appearance: none;
+  /* arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5'%3E%3Cpath fill='%231F2C1D' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 10px 5px;
+  cursor: pointer;
+}.tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  color: var(--dark-blue);
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+  background-color: var(--sage-green);
+}.tag button {
+  background: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+/* Tagged Selector ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
