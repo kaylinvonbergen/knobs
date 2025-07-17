@@ -53,6 +53,7 @@
   border: 2px solid var(--dark-indigo);
   border-radius: 10px;
   min-height: fit-content;
+  overflow: scroll;
 }.two-one {
   width: 20vw;
   height: 10vw;
@@ -159,5 +160,9 @@
   cursor: pointer;
   font-weight: bold;
   color: var(--dark-blue);
+}.card:hover {
+  box-shadow: 0 4px 8px var(--dark-indigo);
+  transform: translateY(-2px);
+  rotate: 1deg;
 }
 /* Tagged Selector ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
